@@ -206,7 +206,7 @@ utils.request = function(options, fileToUpload, fileDownloadTo, callback) {
         });
       });
     } else {
-      res.setEncoding('utf8');
+      res.setEncoding('binary');
       res.on('data', function(chunk) {
         resData += chunk;
       });
